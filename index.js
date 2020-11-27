@@ -1,5 +1,6 @@
 function formatDate(timestamp){
 	let date = new Date(timestamp);
+	let dow= date.getDate();
 	let hours= date.getHours();
 	let time = date.getHours();
 	if (time < 10) {
@@ -28,7 +29,7 @@ function formatDate(timestamp){
 ];
 	let month =months[date.getMonth()];
 	let year =date.getFullYear();
-	return `${day} ${month} ${year} ${hours}:${minutes}`
+	return `${day} ${month} ${dow} ${year} ${hours}:${minutes}`
 }
 
 function displayTemperature(response){
@@ -82,7 +83,7 @@ search.addEventListener("submit", searchButton);
 
 
 let apiKey = "c7c8d5df224c13c5ed3c6b8739d6a047";
-let cityName = "Berlin";
+let cityName = "london";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
 console.log(cityName);

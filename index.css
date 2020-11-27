@@ -2,11 +2,11 @@ body {
 	font-family: "Amatic SC", cursive;
 }
 .weatherApp{
-	max-width:640px;
+	max-width:600px;
 	margin:0 auto;
 	padding:20px;
 	border: solid #c31e25;
-	border-radius: 30px;
+	border-radius: 40px;
 	
 }
 h1 {
@@ -27,14 +27,17 @@ ul{
 .weather{
 	list-style-type: none;
 	position: relative;
-	top:190px;
+	top:10px;
 	left:400px;
 	font-size:25px;
 
 }
 .cityTime{
+	position:relative;
 	margin:0 auto;
 	padding-left:40px;
+	top:-250px;
+	right:20px;
 }
 .cityTemp{
 	margin: 0 auto;
@@ -45,20 +48,20 @@ input {
 	margin-left: 100px;
 	padding: 10px;
 	border-radius: 20px;
-	position: fixed;
-	top: 180px;
-	left: 550px;
+	position: relative;
+	top: 30px;
+	left: -50px;
 	color: #523b58;
 	font-size: 25px;
 }
 button {
-	position: fixed;
+	position: relative;
 	width: 100px;
 	margin: 5px;
 	margin-left: 15px;
 	padding: 15px;
-	top: 180px;
-	left: 890px;
+	top: -40px;
+	left: 300px;
 	border-radius: 10px;
 	background-color: #35c2de;
 	color: #c31e25;
@@ -75,7 +78,7 @@ h2 {
 	border-radius: 10px;
 	position: relative;
 	left: 50px;
-	top: 100px;
+	top: -80px;
 
 	word-spacing: 10px;
 	color: #c31e25;
@@ -96,7 +99,7 @@ h4 {
 }
 .temperature {
 	position: relative;
-	top: 200px;
+	top: 10px;
 	right: 200px;
 }
 .days {
@@ -107,12 +110,12 @@ h4 {
 	font-size: 40px;
 	position: relative;
 	right: 340px;
-	top: 200px;
+	top: -80px;
 	text-align: center;
 }
 .forecast {
 	position: relative;
-	top: 250px;
+	top: 10px;
 	right: 275px;
 	margin: 20px;
 	margin-left: 300px;
@@ -128,7 +131,7 @@ h4 {
 
 .date {
 	position: relative;
-	top: 35px;
+	top: -220px;
 	right: 301px;
 	margin: 30px;
 	margin-left: 310px;
@@ -142,8 +145,8 @@ h4 {
 
 .weatherIcons {
 	position: relative;
-	top: -20px;
-	right: 300px;
+	top: -250px;
+	right: 305px;
 	margin: 20px;
 	margin-left: 320px;
 	margin-right: 300px;
@@ -158,7 +161,7 @@ h4 {
 
 .highLowTemp {
 	position: relative;
-	top: -10px;
+	top: -250px;
 	right: 270px;
 	margin: 20px;
 	margin-left: 300px;
@@ -175,4 +178,4 @@ strong {
 	font-style: italic;
 }
 
-}
+
