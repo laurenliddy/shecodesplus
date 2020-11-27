@@ -20,14 +20,16 @@ h1 {
 	color: #35c2de;
 }
 .cityTime{
-	max-width: 400px;
 	margin:0 auto;
+}
+.cityTemp{
+	margin: 0 auto;
 }
 
 input {
 	width: 400px;
 	margin: 5px;
-	margin-left: 50px;
+	margin-left: 100px;
 	padding: 10px;
 	border-radius: 20px;
 	position: fixed;
@@ -43,7 +45,7 @@ button {
 	margin-left: 15px;
 	padding: 15px;
 	top: 180px;
-	left: 850px;
+	left: 890px;
 	border-radius: 10px;
 	background-color: #35c2de;
 	color: #c31e25;
