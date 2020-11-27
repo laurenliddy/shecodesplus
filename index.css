@@ -2,7 +2,7 @@ body {
 	font-family: "Amatic SC", cursive;
 }
 .weatherApp{
-	max-width:950px;
+	max-width:640px;
 	margin:0 auto;
 	padding:20px;
 	border: solid #c31e25;
@@ -17,8 +17,20 @@ h1 {
 	top: 20px;
 	left:40px;
 	letter-spacing: 2px;
-	font-size: 56px;
+	font-size: 40px;
 	color: #35c2de;
+}
+ul{
+	list-style-type: none;
+}
+
+.weather{
+	list-style-type: none;
+	position: relative;
+	top:190px;
+	left:400px;
+	font-size:25px;
+
 }
 .cityTime{
 	margin:0 auto;
@@ -27,16 +39,15 @@ h1 {
 .cityTemp{
 	margin: 0 auto;
 }
-
 input {
-	width: 400px;
+	width: 250px;
 	margin: 5px;
 	margin-left: 100px;
 	padding: 10px;
 	border-radius: 20px;
 	position: fixed;
 	top: 180px;
-	left: 400px;
+	left: 550px;
 	color: #523b58;
 	font-size: 25px;
 }
@@ -56,15 +67,15 @@ button {
 h2 {
 	text-align: center;
 	position: relative;
-	width: 500px;
+	width: 320px;
 	margin: 5px;
-	margin-left: 50px;
+	margin-left: 5px;
 	padding: 15px;
 	border: solid 3px black;
 	border-radius: 10px;
 	position: relative;
-	left: 180px;
-	top: 180px;
+	left: 50px;
+	top: 100px;
 
 	word-spacing: 10px;
 	color: #c31e25;
@@ -89,160 +100,73 @@ h4 {
 	right: 200px;
 }
 .days {
-	margin: 20px;
+	margin: 30px;
 	margin-left: 350px;
 	margin-right: 350px;
 	padding: 10px;
-
 	font-size: 40px;
 	position: relative;
-	right: 320px;
+	right: 340px;
 	top: 200px;
-
 	text-align: center;
 }
 .forecast {
 	position: relative;
-	top: 280px;
-	right: 290px;
+	top: 250px;
+	right: 275px;
 	margin: 20px;
 	margin-left: 300px;
 	margin-right: 300px;
-	padding: 15px;
+	padding: 10px;
 	padding-left: 15px;
 	font-family: "Amatic SC", cursive;
-	font-size: 40px;
+	font-size: 35px;
 }
 .col {
 	text-align: center;
 }
-.mon {
-	position: relative;
-	right: 5px;
-	margin: 10px;
-	padding: 10px;
-}
-.tues {
-	position: relative;
-	right: 5px;
-	margin: 10px;
-	padding: 10px;
-}
-.wed {
-	position: relative;
-	right: 5px;
-	margin: 10px;
-	padding: 10px;
-}
-.thurs {
-	position: relative;
-	right: 5px;
-	margin: 10px;
-	padding: 10px;
-}
-.fri {
-	position: relative;
-	right: 5px;
-	margin: 10px;
-	padding: 10px;
-}
-.t1 {
-	position: relative;
-	left: 14px;
-}
-.t2 {
-	position: relative;
-	left: 13px;
-}
-.t3 {
-	position: relative;
-	left: 14px;
-}
-.t4 {
-	position: relative;
-	left: 14px;
-}
-.t5 {
-	position: relative;
-	left: 37px;
-}
+
 .date {
 	position: relative;
-	top: 30px;
-	right: 280px;
-	margin: 20px;
-	margin-left: 300px;
-	margin-right: 300px;
-	padding: 15px;
+	top: 35px;
+	right: 301px;
+	margin: 30px;
+	margin-left: 310px;
+	margin-right: 304px;
+	padding: 10px;
 	padding-left: 15px;
 	font-family: "Amatic SC", cursive;
-	font-size: 40px;
+	font-size: 30px;
 }
 
-.d1 {
-	margin: 5px;
-	padding: 5px;
-}
 
-.d2 {
-	position: relative;
-	right: 6px;
-	left: 5px;
-	margin: 5px;
-	padding: 5px;
-}
-.d3 {
-	position: relative;
-	right: 6px;
-	left: 7px;
-	margin: 5px;
-	padding: 5px;
-}
-.d4 {
-	position: relative;
-	left: 11px;
-	margin: 5px;
-	padding: 5px;
-}
-.d5 {
-	position: relative;
-	right: 8px;
-	left: 11px;
-	margin: 5px;
-	padding: 5px;
-}
 .weatherIcons {
 	position: relative;
 	top: -20px;
-	right: 280px;
+	right: 300px;
 	margin: 20px;
-	margin-left: 300px;
+	margin-left: 320px;
 	margin-right: 300px;
-	padding: 15px;
-	padding-left: 15px;
+	padding: 10px;
+	padding-left: 10px;
 	font-family: "Amatic SC", cursive;
 	font-size: 45px;
 	color: #c31e25;
 }
-.icon4 {
-	position: relative;
-	left: 12px;
-}
-.icon5 {
-	position: relative;
-	left: 18px;
-}
+
+
+
 .highLowTemp {
 	position: relative;
 	top: -10px;
-	right: 280px;
+	right: 270px;
 	margin: 20px;
 	margin-left: 300px;
 	margin-right: 300px;
-	padding: 15px;
+	padding: 20px;
 	padding-left: 15px;
 	font-family: "Amatic SC", cursive;
-	font-size: 45px;
+	font-size: 30px;
 	color: #141217;
 }
 strong {
@@ -250,7 +174,5 @@ strong {
 	font-weight: bolder;
 	font-style: italic;
 }
-.high5 {
-	position: relative;
-	left: 20px;
+
 }
