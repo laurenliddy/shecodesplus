@@ -1,8 +1,18 @@
-let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-let currentDate = new Date();
-console.log(currentDate);
-let date = currentDate.getDate();
-let months = [
+function formatDate(timestamp){
+	let date = new Date(timestamp);
+	let hours= date.getHours();
+	let time = date.getHours();
+	if (time < 10) {
+		time = `0${time}`
+	}
+	let minutes = date.getMinutes();
+	let timeMin = date.getMinutes();
+	if (timeMin < 10) {
+		timeMin = `0${timeMin}`;
+	}
+	let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+	let day = days[date.getDay()];
+	let months = [
 	"Jan",
 	"Feb",
 	"March",
@@ -16,22 +26,10 @@ let months = [
 	"Nov",
 	"Dec",
 ];
-let month = months[currentDate.getMonth()];
-let day = days[currentDate.getDay()];
-let time = currentDate.getHours();
-if (time < 10) {
-	time = `0${time}`;
+	let month =months[date.getMonth()];
+	let year =date.getFullYear();
+	return `${day} ${month} ${year} ${hours}:${minutes}`
 }
-let timeMin = currentDate.getMinutes();
-
-if (timeMin < 10) {
-	timeMin = `0${timeMin}`;
-}
-
-let year = currentDate.getFullYear();
-
-let heading = document.querySelector("h3");
-heading.innerHTML = `${day} ${month} ${date}, ${year}  ${time}:${timeMin}`;
 
 function displayTemperature(response){
 	console.log(response)
@@ -50,8 +48,10 @@ function showTemp(response){
 	console.log(response)
 	let humidityElement=document.querySelector("#humidity");
 	let windElement =document.querySelector("#wind");
+	let dateElement=document.querySelector("#date")
 	humidityElement.innerHTML=response.data.main.humidity;
 	windElement.innerHTML=Math.round(response.data.wind.speed);
+	dateElement.innerHTML= formatDate(response.data.dt * 1000);
 	}
 
 function searchButton(event) {
@@ -86,7 +86,4 @@ let cityName = "Berlin";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
 console.log(cityName);
-axios.get(apiUrl).then(showTemp);
-
-
-
+axios.get(apiUrl).then(showTemp)
