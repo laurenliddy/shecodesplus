@@ -1,12 +1,12 @@
 body {
-	margin-left: 400px;
-	padding-top: 20px;
-	text-align: center;
-	width: 60%;
-	border: solid 4px #ed2225;
-    border-radius: 20px;
-    position:fixed;
-    
+	font-family: "Amatic SC", cursive;
+}
+.weatherApp{
+	max-width:950px;
+	margin:0 auto;
+	padding:20px;
+	border: solid #c31e25;
+	border-radius: 30px;
 }
 h1 {
 	text-align: center;
@@ -14,10 +14,14 @@ h1 {
 	padding: 20px;
 	position: relative;
 	top: 40px;
-	font-family: "Amatic SC", cursive;
+	right:60px;
 	letter-spacing: 2px;
 	font-size: 56px;
 	color: #35c2de;
+}
+.cityTime{
+	max-width: 400px;
+	margin:0 auto;
 }
 
 input {
@@ -30,7 +34,6 @@ input {
 	top: 180px;
 	left: 400px;
 	color: #523b58;
-	font-family: "Amatic SC", cursive;
 	font-size: 25px;
 }
 button {
@@ -42,14 +45,13 @@ button {
 	top: 180px;
 	left: 850px;
 	border-radius: 10px;
-	font-family: "Amatic SC", cursive;
 	background-color: #35c2de;
 	color: #c31e25;
 	font-weight: 20px;
 }
 h2 {
 	text-align: center;
-	position: fixed;
+	position: relative;
 	width: 500px;
 	margin: 5px;
 	margin-left: 50px;
@@ -59,14 +61,13 @@ h2 {
 	position: relative;
 	left: 250px;
 	top: 180px;
-	font-family: "Amatic SC", cursive;
+
 	word-spacing: 10px;
-	color:#c31e25;
-	
+	color: #c31e25;
 }
 h3 {
 	text-align: center;
-	font-family: "Amatic SC", cursive;
+
 	position: relative;
 	top: 200px;
 	word-spacing: 20px;
@@ -88,7 +89,7 @@ h4 {
 	margin-left: 350px;
 	margin-right: 350px;
 	padding: 10px;
-	font-family: "Amatic SC", cursive;
+
 	font-size: 40px;
 	position: relative;
 	right: 320px;
@@ -219,13 +220,13 @@ h4 {
 	font-size: 45px;
 	color: #c31e25;
 }
-.icon4{
-    position:relative;
-    left:12px;
+.icon4 {
+	position: relative;
+	left: 12px;
 }
 .icon5 {
 	position: relative;
-	left:18px;
+	left: 18px;
 }
 .highLowTemp {
 	position: relative;
@@ -245,7 +246,7 @@ strong {
 	font-weight: bolder;
 	font-style: italic;
 }
-.high5{
-    position:relative;
-    left:20px;
+.high5 {
+	position: relative;
+	left: 20px;
 }
