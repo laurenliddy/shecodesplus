@@ -9,7 +9,8 @@ body {
 	padding:20px;
 	border: solid #c31e25;
 	border-radius: 40px;
-	background-image: linear-gradient(to right bottom, #efdce6, #e2cfdf, #d3c3d9, #c1b7d4, #adadce, #929dbc, #778da9, #5e7d95, #416271, #2a474f, #172e30, #031615);
+	
+	
 }
 h1 {
 	text-align: center;
@@ -20,7 +21,7 @@ h1 {
 	left:40px;
 	letter-spacing: 2px;
 	font-size: 40px;
-	color: #35c2de;
+	color:#c31e25;
 }
 ul{
 	list-style-type: none;
@@ -32,6 +33,7 @@ ul{
 	top:10px;
 	left:400px;
 	font-size:25px;
+	
 
 }
 .cityTime{
@@ -65,7 +67,6 @@ button {
 	top: -40px;
 	left: 300px;
 	border-radius: 10px;
-	background-color: #35c2de;
 	color: #c31e25;
 	font-weight: 20px;
 }
