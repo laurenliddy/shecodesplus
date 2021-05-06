@@ -1,16 +1,27 @@
 body {
 	font-family: "Amatic SC", cursive;
-	
+	background-color: #f1faee;
 
 }
 .weatherApp{
-	max-width:600px;
+	max-width:800px;
 	margin:0 auto;
-	padding:20px;
+	padding:40px;
 	border: solid #c31e25;
 	border-radius: 40px;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0xG_V_B-kFgdJYAU_ngljh2_ily3GIIG14A&usqp=CAU");
+	background-repeat: no-repeat;
+	background-size: 800px 1000px;
+	max-height: 950px;
+	position: absolute;
+	top:50px;
+	left:80px;
 	
 	
+}
+.weather-forecast{
+	font-size: 30px;
+	text-align: center;
 }
 h1 {
 	text-align: center;
@@ -18,10 +29,14 @@ h1 {
 	padding: 25px;
 	position: relative;
 	top: 20px;
-	left:40px;
+	left:10px;
 	letter-spacing: 2px;
 	font-size: 40px;
-	color:#c31e25;
+	
+	border: solid 2px rgba(144, 145, 148, 0);
+	background-color:rgba(144, 145, 148, 0.6);
+	border-radius: 20px;
+	color:white;
 }
 ul{
 	list-style-type: none;
@@ -31,21 +46,24 @@ ul{
 	list-style-type: none;
 	position: relative;
 	top:10px;
-	left:400px;
+	left:390px;
 	font-size:25px;
-	
+	border: solid 2px rgba(144, 145, 148, 0);
+	background-color:rgba(144, 145, 148, 0.6);
+	border-radius: 20px;
+	color:white;
+	max-width: 180px;
 
 }
 .cityTime{
 	position:relative;
 	margin:0 auto;
 	padding-left:40px;
-	top:-250px;
+	top:-220px;
 	right:20px;
+	color:;
 }
-.cityTemp{
-	margin: 0 auto;
-}
+
 input {
 	width: 250px;
 	margin: 5px;
@@ -82,17 +100,22 @@ h2 {
 	position: relative;
 	left: 50px;
 	top: -80px;
-
 	word-spacing: 10px;
-	color: #c31e25;
+	color: white;
 }
-h3 {
+.cityTime{
 	text-align: center;
-
 	position: relative;
-	top: 200px;
+	top:-20px;
+	left:4px;
 	word-spacing: 20px;
 	letter-spacing: 2px;
+	margin: 0 auto;
+	border: solid 2px rgba(144, 145, 148, 0);
+	background-color:rgba(144, 145, 148, 0.6);
+	border-radius: 20px;
+	padding:20px;
+	color:white;
 }
 h4 {
 	position: relative;
@@ -100,41 +123,11 @@ h4 {
 	left: 1100px;
 	bottom: 20px;
 }
-.temperature {
-	position: relative;
-	top: 10px;
-	right: 200px;
-}
-.days {
-	margin: 30px;
-	margin-left: 350px;
-	margin-right: 350px;
-	padding: 10px;
-	font-size: 40px;
-	position: relative;
-	right: 340px;
-	top: -80px;
-	text-align: center;
-}
-.forecast {
-	position: relative;
-	top: 10px;
-	right: 275px;
-	margin: 20px;
-	margin-left: 300px;
-	margin-right: 300px;
-	padding: 10px;
-	padding-left: 15px;
-	font-family: "Amatic SC", cursive;
-	font-size: 35px;
-}
-.col {
-	text-align: center;
-}
+
 
 .date {
 	position: relative;
-	top: -220px;
+	top: -210px;
 	right: 301px;
 	margin: 30px;
 	margin-left: 310px;
@@ -143,6 +136,8 @@ h4 {
 	padding-left: 15px;
 	font-family: "Amatic SC", cursive;
 	font-size: 30px;
+	max-width:500px;
+
 }
 
 
@@ -158,6 +153,8 @@ h4 {
 	font-family: "Amatic SC", cursive;
 	font-size: 45px;
 	color: #c31e25;
+	max-width:500px;
+	line-height: -20px;
 }
 
 
@@ -172,13 +169,22 @@ h4 {
 	padding: 20px;
 	padding-left: 15px;
 	font-family: "Amatic SC", cursive;
-	font-size: 30px;
+	font-size: 25px;
 	color: #141217;
+	max-width: 500px;
+	line-height:-10px;
 }
 strong {
 	color: #ed2225;
 	font-weight: bolder;
-	font-style: italic;
+	
 }
-
+a{
+	color:#141217;
+	position:relative;
+	max-width:400px;
+	left: 930px;
+	bottom:100px;
+	font-size: 3s0px;
+}
 
